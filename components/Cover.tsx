@@ -7,15 +7,15 @@ import React from "react";
 export const Cover = () => {
   const { colorMode } = useColorMode();
   const { colors } = useTheme();
+
   return (
     <Box
       bgImage="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80"
-      backgroundSize='cover'
+      backgroundSize="cover"
       flex="row"
       alignItems="flex-end"
       justifyContent="center"
       width="100vw"
-      minHeight={["150px"]}
       display="flex"
     >
       <Box
