@@ -24,7 +24,7 @@ export const PersonalInfo = () => {
         <Box textAlign="center">
           <Heading
             fontWeight="600"
-            fontSize={['2xl', '3xl', '5xl']}
+            fontSize={['2xl', '3xl', '4xl']}
             paddingY="1rem"
             fontFamily="Montserrat, sans-serif"
           >
@@ -40,8 +40,14 @@ export const PersonalInfo = () => {
           >
             * Frontend developer * Jalisco, MX 🇲🇽
           </Text>
-          <Text paddingTop="1.3rem" fontFamily="Montserrat, sans-serif">
-            About one year of experience working on web development
+          <Text
+            paddingTop="1.3rem"
+            paddingX="5rem"
+            fontFamily="Montserrat, sans-serif"
+          >
+            About one year of experience working on web development, i love to
+            learn something new everyday, i like to make projects from scratch
+            and i love then challenges
           </Text>
         </Box>
         <Box paddingY="1rem">
