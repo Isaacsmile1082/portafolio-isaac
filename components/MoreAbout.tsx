@@ -1,21 +1,8 @@
-import {
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Fade,
-  WrapItem,
-  Tag,
-  TagRightIcon,
-  TagLabel,
-  Wrap,
-  Stack,
-  Flex
-} from '@chakra-ui/react'
+import { Tab, TabList, TabPanel, TabPanels, Tabs, Fade } from '@chakra-ui/react'
 
 import React from 'react'
-import { stacks } from '../info/Stacks'
+
+import { panels } from './panels/index'
 
 export const MoreAbout = () => {
   const [tabIndex, setTabIndex] = React.useState(0)
@@ -43,28 +30,9 @@ export const MoreAbout = () => {
       </TabList>
 
       <TabPanels>
-        {[0, 1, 2, 3].map(el => (
-          <TabPanel key={el}>
-            <Fade in={tabIndex == el}>
-              <Wrap wrap="wrap" spacing="30px" align="center" justify="center">
-                {stacks.map(({ name, icon, colorScheme }) => (
-                  <WrapItem key={name}>
-                    <Tag
-                      size="lg"
-                      borderRadius="full"
-                      colorScheme={colorScheme}
-                      padding=".8rem"
-                    >
-                      <TagLabel fontSize="xl">{name}</TagLabel>
-                      <TagRightIcon
-                        as={icon}
-                        style={{ width: '30px', height: '30px' }}
-                      />
-                    </Tag>
-                  </WrapItem>
-                ))}
-              </Wrap>
-            </Fade>
+        {panels.map(({ index, Panel }) => (
+          <TabPanel key={index}>
+            <Fade in={tabIndex == index}>{<Panel />}</Fade>
           </TabPanel>
         ))}
       </TabPanels>
