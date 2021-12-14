@@ -1,11 +1,11 @@
-import { Image } from "@chakra-ui/image";
-import { Box } from "@chakra-ui/layout";
-import { useColorMode, useTheme } from "@chakra-ui/system";
-import React from "react";
+import { Image } from '@chakra-ui/image'
+import { Box } from '@chakra-ui/layout'
+import { useColorMode, useTheme } from '@chakra-ui/system'
+import React from 'react'
 
 export const Cover = () => {
-  const { colorMode } = useColorMode();
-  const { colors } = useTheme();
+  const { colorMode } = useColorMode()
+  const { colors } = useTheme()
 
   return (
     <Box
@@ -16,27 +16,29 @@ export const Cover = () => {
       justifyContent="center"
       width="100vw"
       display="flex"
+      backgroundAttachment="fixed"
     >
       <Box
         sx={{
-          maxWidth: ["100px", "130px", "150px", "200px"],
-          height: "auto",
+          maxWidth: ['100px', '130px', '150px', '300px'],
+          height: 'auto',
           border: `
           5px solid 
-          ${colorMode === "light" ? colors.white : colors.gray[800]}`,
-          borderRadius: "50%",
-          position: "relative",
-          top: ["1.3rem", null, "2rem"],
+          ${colorMode === 'light' ? colors.white : colors.gray[800]}`,
+          borderRadius: '50%',
+          position: 'relative',
+          top: ['1.3rem', null, '2rem']
         }}
       >
         <Image
           alt="Picture profile"
+          maxWidth="250px"
           src={
-            "https://res.cloudinary.com/nei/image/upload/v1633922157/udg/programacion%20para%20internet/portafolio/perfil_adc1qg.jpg"
+            'https://res.cloudinary.com/nei/image/upload/v1633922157/udg/programacion%20para%20internet/portafolio/perfil_adc1qg.jpg'
           }
-          borderRadius={["50%"]}
+          borderRadius={['50%']}
         />
       </Box>
     </Box>
-  );
-};
+  )
+}

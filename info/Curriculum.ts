@@ -1,3 +1,1 @@
-export const curriculum = {
-
-};
+export const curriculum = {}
