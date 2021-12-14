@@ -9,7 +9,7 @@ export const Cover = () => {
 
   return (
     <Box
-      bgImage="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80"
+      bgImage="https://www.setaswall.com/wp-content/uploads/2017/03/4K-Code-Programming-Text-Wallpaper-3840x2160.jpg"
       backgroundSize="cover"
       flex="row"
       alignItems="flex-end"
@@ -20,7 +20,7 @@ export const Cover = () => {
     >
       <Box
         sx={{
-          maxWidth: ['100px', '130px', '150px', '300px'],
+          maxWidth: ['100px', '130px', '150px', '320px'],
           height: 'auto',
           border: `
           5px solid 
