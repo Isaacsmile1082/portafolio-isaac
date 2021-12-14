@@ -1,12 +1,13 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { Cover } from "../components/Cover";
-import styles from "../styles/Home.module.css";
-import { Container } from "@chakra-ui/react";
-import { SocialNetworks } from "../components/SocialNetworks";
-import { MoreAbout } from "../components/MoreAbout";
-import { PersonalInfo } from "../components/PersonalInfo";
-import { ToggleTheme } from "../components/ToggleTheme";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { Cover } from '../components/Cover'
+import styles from '../styles/Home.module.css'
+import { Container } from '@chakra-ui/react'
+import { SocialNetworks } from '../components/SocialNetworks'
+import { MoreAbout } from '../components/MoreAbout'
+import { PersonalInfo } from '../components/PersonalInfo'
+import { ToggleTheme } from '../components/ToggleTheme'
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,14 +17,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Cover />
-      <Container padding="1rem">
+      <Container maxW={['container.lg', null, 'container.lg']}>
         <ToggleTheme />
+
         <PersonalInfo />
         <MoreAbout />
-        <SocialNetworks />
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,46 +1,43 @@
-import { Flex, IconButton } from '@chakra-ui/react'
+import { Flex, IconButton, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
 import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn'
-import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 
 import React from 'react'
 
 export const SocialNetworks = () => {
   return (
-    <Flex
+    <Wrap
       borderRadius="lg"
       marginTop="1.5rem"
-      padding="1rem"
-      border="1px solid"
       borderColor="gray.400"
-      shadow="sm"
-      justifyContent="space-around"
+      justifyContent="start"
+      spacing="25px"
     >
-      <IconButton
-        borderRadius="full"
-        aria-label="d"
-        colorScheme="facebook"
-        icon={<FaFacebookF />}
-      />
-      <IconButton
-        borderRadius="full"
-        aria-label="d"
-        colorScheme="linkedin"
-        icon={<FaLinkedinIn />}
-      />
-      <IconButton
-        borderRadius="full"
-        aria-label="d"
-        colorScheme="whatsapp"
-        icon={<FaWhatsapp />}
-      />
-      <IconButton
-        borderRadius="full"
-        aria-label="d"
-        colorScheme="twitter"
-        icon={<FaTwitter />}
-      />
-    </Flex>
+      <WrapItem>
+        <IconButton
+          borderRadius="full"
+          aria-label="d"
+          colorScheme="facebook"
+          icon={<FaFacebookF />}
+        />
+      </WrapItem>
+      <WrapItem>
+        <IconButton
+          borderRadius="full"
+          aria-label="d"
+          colorScheme="linkedin"
+          icon={<FaLinkedinIn />}
+        />
+      </WrapItem>
+      <WrapItem>
+        <IconButton
+          borderRadius="full"
+          aria-label="d"
+          colorScheme="gray"
+          icon={<FaGithub />}
+        />
+      </WrapItem>
+    </Wrap>
   )
 }

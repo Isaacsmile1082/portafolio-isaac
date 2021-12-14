@@ -7,7 +7,7 @@ export const ToggleTheme = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Flex justify="end">
+    <Flex justify="end" paddingTop="1.3rem" position="sticky" top="20px">
       <IconButton
         aria-label="toggle theme"
         variant="outline"
