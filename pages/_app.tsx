@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/dist/shared/lib/router/router'
 

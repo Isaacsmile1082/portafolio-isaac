@@ -1,3 +1,1 @@
-export const stacks = {
-
-};
+export const stacks = {}

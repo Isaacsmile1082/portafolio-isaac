@@ -1,4 +1,3 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/image";
 import { Box } from "@chakra-ui/layout";
 import { useColorMode, useTheme } from "@chakra-ui/system";

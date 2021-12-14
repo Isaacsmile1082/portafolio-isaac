@@ -1,10 +1,10 @@
-import { Flex, IconButton } from "@chakra-ui/react";
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
-import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
-import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
-import { FaTwitter} from "@react-icons/all-files/fa/FaTwitter";
+import { Flex, IconButton } from '@chakra-ui/react'
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn'
+import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp'
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 
-import React from "react";
+import React from 'react'
 
 export const SocialNetworks = () => {
   return (
@@ -35,12 +35,12 @@ export const SocialNetworks = () => {
         colorScheme="whatsapp"
         icon={<FaWhatsapp />}
       />
-    <IconButton
+      <IconButton
         borderRadius="full"
         aria-label="d"
         colorScheme="twitter"
-        icon={<FaTwitter/>}
+        icon={<FaTwitter />}
       />
     </Flex>
-  );
-};
+  )
+}

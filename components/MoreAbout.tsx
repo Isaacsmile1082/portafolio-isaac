@@ -1,29 +1,21 @@
-import {
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Tag,
-  Fade,
-} from "@chakra-ui/react";
-import React from "react";
+import { Tab, TabList, TabPanel, TabPanels, Tabs, Fade } from '@chakra-ui/react'
+import React from 'react'
 
 export const MoreAbout = () => {
-  const [tabIndex, setTabIndex] = React.useState(0);
+  const [tabIndex, setTabIndex] = React.useState(0)
 
   const handleTabsChange = (index: number) => {
-    setTabIndex(index);
-  };
+    setTabIndex(index)
+  }
 
-  console.log(tabIndex);
+  console.log(tabIndex)
 
   return (
     <Tabs
       index={tabIndex}
       onChange={handleTabsChange}
       isFitted
-      sx={{ marginTop: "2rem" }}
+      sx={{ marginTop: '2rem' }}
       padding=".5rem"
     >
       <TabList>
@@ -33,16 +25,14 @@ export const MoreAbout = () => {
       </TabList>
 
       <TabPanels>
-        {[0, 1, 2].map((el) => (
-          <TabPanel key={el} >
+        {[0, 1, 2].map(el => (
+          <TabPanel key={el}>
             <Fade in={tabIndex == el}>
               <p>{el}</p>
             </Fade>
           </TabPanel>
         ))}
-
-    
       </TabPanels>
     </Tabs>
-  );
-};
+  )
+}

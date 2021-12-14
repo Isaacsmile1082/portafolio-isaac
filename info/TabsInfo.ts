@@ -1,3 +1,1 @@
-export const tabsInfo = {
-
-};
+export const tabsInfo = {}

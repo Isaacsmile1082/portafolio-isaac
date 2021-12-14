@@ -1,20 +1,20 @@
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { Flex } from '@chakra-ui/layout'
 import { IconButton, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 
 export const ToggleTheme = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode()
 
-    return (
-        <Flex justify="end">
-          <IconButton
-            aria-label="toggle theme"
-            variant="outline"
-            borderRadius="full"
-            onClick={toggleColorMode}
-            icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-          ></IconButton>
-        </Flex>
-    )
+  return (
+    <Flex justify="end">
+      <IconButton
+        aria-label="toggle theme"
+        variant="outline"
+        borderRadius="full"
+        onClick={toggleColorMode}
+        icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
+      ></IconButton>
+    </Flex>
+  )
 }

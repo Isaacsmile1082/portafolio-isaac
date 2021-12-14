@@ -1,14 +1,14 @@
 export const technologies = [
   {
-    title: "Developer",
-    emoji: null,
+    title: 'Developer',
+    emoji: null
   },
   {
-    title: "Geek",
-    emoji: null,
+    title: 'Geek',
+    emoji: null
   },
   {
-    title: "Responsability",
-    emoji: null,
-  },
-];
+    title: 'Responsability',
+    emoji: null
+  }
+]
