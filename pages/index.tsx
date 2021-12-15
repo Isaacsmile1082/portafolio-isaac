@@ -19,7 +19,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Cover />
-      <Container maxW={['container.lg', null, 'container.lg']}>
+      <Container
+        maxW={['container.lg', null, 'container.lg']}
+        overflowX="hidden"
+      >
         <ToggleTheme />
         <PersonalInfo />
         <MoreAbout />
