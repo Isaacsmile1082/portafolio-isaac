@@ -1,11 +1,10 @@
 import { Image } from '@chakra-ui/image'
 import { Box } from '@chakra-ui/layout'
-import { useColorMode, useTheme } from '@chakra-ui/system'
+import { useColorMode } from '@chakra-ui/system'
 import React from 'react'
 
 export const Cover = () => {
   const { colorMode } = useColorMode()
-  const { colors } = useTheme()
 
   return (
     <Box
@@ -14,29 +13,27 @@ export const Cover = () => {
       flex="row"
       alignItems="flex-end"
       justifyContent="center"
-      width="100vw"
       display="flex"
       backgroundAttachment="fixed"
     >
       <Box
         sx={{
-          maxWidth: ['100px', '130px', '150px', '320px'],
+          maxWidth: ['150px', '100px', '200px', '280px'],
           height: 'auto',
-          border: `
-          5px solid 
-          ${colorMode === 'light' ? colors.white : colors.gray[800]}`,
-          borderRadius: '50%',
           position: 'relative',
           top: ['1.3rem', null, '2rem']
         }}
+        display="flex"
+        justifyContent="center"
       >
         <Image
           alt="Picture profile"
-          maxWidth="250px"
           src={
             'https://res.cloudinary.com/nei/image/upload/v1633922157/udg/programacion%20para%20internet/portafolio/perfil_adc1qg.jpg'
           }
-          borderRadius={['50%']}
+          borderRadius="full"
+          border="5px solid"
+          borderColor={colorMode === 'dark' ? 'gray.800' : 'white'}
         />
       </Box>
     </Box>

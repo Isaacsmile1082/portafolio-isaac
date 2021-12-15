@@ -11,11 +11,13 @@ export const StackTechs = () => {
             size="lg"
             borderRadius="full"
             colorScheme={colorScheme}
-            padding=".8rem"
             variant="outline"
           >
-            <TagLabel fontSize="xl">{name}</TagLabel>
-            <TagRightIcon as={icon} style={{ width: '30px', height: '30px' }} />
+            <TagLabel fontSize={['md']}>{name}</TagLabel>
+            <TagRightIcon
+              as={icon}
+              sx={{ width: ['20px'], height: ['20px'] }}
+            />
           </Tag>
         </WrapItem>
       ))}

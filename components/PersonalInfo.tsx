@@ -34,7 +34,7 @@ export const PersonalInfo = () => {
           <Divider />
           <br />
           <Text
-            fontSize={['sm', 'lg', '2xl']}
+            fontSize={['lg', 'lg', '2xl']}
             fontWeight="600"
             fontFamily="Montserrat, sans-serif"
           >
@@ -42,7 +42,7 @@ export const PersonalInfo = () => {
           </Text>
           <Text
             paddingTop="1.3rem"
-            paddingX="5rem"
+            paddingX={['.5rem']}
             fontFamily="Montserrat, sans-serif"
           >
             About one year of experience working on web development, i love to
