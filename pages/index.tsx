@@ -1,16 +1,14 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Cover } from '../components/Cover'
 import styles from '../styles/Home.module.css'
 import { Box, Container } from '@chakra-ui/react'
-import { SocialNetworks } from '../components/SocialNetworks'
 import { MoreAbout } from '../components/MoreAbout'
 import { PersonalInfo } from '../components/PersonalInfo'
 import { ToggleTheme } from '../components/ToggleTheme'
 import { FormContact } from '../components/FormContact'
 import { Footer } from '../components/Footer'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
