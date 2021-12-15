@@ -1,4 +1,5 @@
 import { ExperiencePanel } from './ExperiencePanel'
+import { Repositories } from './Repositories'
 import { StackTechs } from './StackTechs'
 
 export const panels = [
@@ -8,7 +9,7 @@ export const panels = [
   },
   {
     index: 1,
-    Panel: StackTechs
+    Panel: Repositories
   },
   {
     index: 2,
