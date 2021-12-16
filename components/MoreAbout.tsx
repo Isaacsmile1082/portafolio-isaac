@@ -22,11 +22,11 @@ export const MoreAbout = () => {
       padding=".5rem"
     >
       <TabList>
-        <Tab fontWeight="900">Stack</Tab>
-        <Tab fontWeight="900">Repositories</Tab>
-        <Tab fontWeight="900">Blog</Tab>
-        <Tab fontWeight="900">Experience</Tab>
-        <Tab fontWeight="900">Education</Tab>
+        <Tab fontWeight="700">Stack</Tab>
+        <Tab fontWeight="700">Repositories</Tab>
+        <Tab fontWeight="700">Blog</Tab>
+        <Tab fontWeight="700">Experience</Tab>
+        <Tab fontWeight="700">Education</Tab>
       </TabList>
 
       <TabPanels>
