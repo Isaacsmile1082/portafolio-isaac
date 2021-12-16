@@ -42,7 +42,7 @@ export const PersonalInfo = () => {
           </Text>
           <Text
             paddingTop="1.3rem"
-            paddingX={['.5rem']}
+            paddingX={['.5rem', null, '5rem', '8rem']}
             fontFamily="Montserrat, sans-serif"
           >
             About one year of experience working on web development, i love to
