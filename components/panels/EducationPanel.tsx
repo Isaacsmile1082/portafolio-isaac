@@ -30,14 +30,23 @@ const EducationCard = ({ name, title, period, image_url }: EducationProps) => {
         borderRadius="lg"
         overflow="hidden"
       >
-        <Image src={image_url} padding={ name == 'UDG' ? 7 : 0 }  objectFit="cover"/>
+        <Image
+          src={image_url}
+          padding={name == 'UDG' ? 7 : 0}
+          objectFit="cover"
+          alt="Universidad de gudalajara"
+        />
       </Box>
       <Stack alignItems="center" justify="center" paddingX="1rem">
         <Heading as="h4" size="md" fontFamily="montserrat">
           {name}
         </Heading>
-        <Text fontSize="sm" textAlign="center" fontFamily="montserrat">{title}</Text>
-        <Text fontSize="md" fontFamily="montserrat">{period}</Text>
+        <Text fontSize="sm" textAlign="center" fontFamily="montserrat">
+          {title}
+        </Text>
+        <Text fontSize="md" fontFamily="montserrat">
+          {period}
+        </Text>
       </Stack>
     </Flex>
   )

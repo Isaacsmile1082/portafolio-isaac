@@ -14,7 +14,7 @@ export const panels = [
   },
   {
     index: 2,
-    Panel: () => (<h1>Currently im working on it :P</h1>)
+    Panel: () => <h1>Currently im working on it :P</h1>
   },
   {
     index: 3,
