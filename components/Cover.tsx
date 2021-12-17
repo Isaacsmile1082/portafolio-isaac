@@ -8,7 +8,7 @@ export const Cover = () => {
 
   return (
     <Box
-      bgImage="https://www.setaswall.com/wp-content/uploads/2017/03/4K-Code-Programming-Text-Wallpaper-3840x2160.jpg"
+      bgImage="https://res.cloudinary.com/nei/image/upload/v1639718715/4K-Code-Programming-Text-Wallpaper-3840x2160_a3ste5.jpg"
       backgroundSize="cover"
       flex="row"
       alignItems="flex-end"
