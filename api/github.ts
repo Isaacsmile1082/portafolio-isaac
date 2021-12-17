@@ -3,6 +3,7 @@ import { Octokit } from 'octokit'
 const octokit = new Octokit({
   auth: `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`
 })
+// process.env.OCTO as any
 
 export const authenticate = async () => {
   const {

@@ -17,7 +17,7 @@ export const StackTechs = () => {
   return (
     <Wrap wrap="wrap" spacing="30px" align="center" justify="center">
       {stacks.map(props => (
-        <TagTech key="name" {...props} />
+        <TagTech key={props.name} {...props} />
       ))}
     </Wrap>
   )

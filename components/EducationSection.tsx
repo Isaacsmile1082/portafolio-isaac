@@ -22,15 +22,18 @@ const EducationCard = ({ name, title, period, image_url }: EducationProps) => {
       justify="center"
       backgroundColor={color?.colorMode === 'dark' ? 'gray.700' : 'white'}
       borderRadius="lg"
-      maxW={['100%', null, null, '40%']}
+      maxW={['100%', null, '40%']}
       shadow="md"
-      border="1px solid"
+      transition="all ease .3s"
+      _hover={{
+        transform: 'translateY(-.5rem)'
+      }}
     >
       <Box
         display="flex"
         alignItems="center"
         width="40%"
-        borderRadius="lg"
+        borderRadius="xl"
         overflow="hidden"
       >
         <Image

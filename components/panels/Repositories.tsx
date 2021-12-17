@@ -10,10 +10,14 @@ import {
   Tag,
   TagLabel,
   useColorMode,
-  useDisclosure
+  useDisclosure,
+  Center
 } from '@chakra-ui/react'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { useRepo } from '../hooks/useRepo'
+import { GrNext } from '@react-icons/all-files/gr/GrNext'
+import { GrPrevious } from '@react-icons/all-files/gr/GrPrevious'
+
 import React from 'react'
 
 interface CardRepositoryProps {
@@ -42,7 +46,7 @@ export const Repositories = () => {
           />
         ))}
         {!repos.length && (
-          <Alert status="error">
+          <Alert status="info" borderRadius="lg">
             <AlertIcon />
             There are no more repos :(
           </Alert>
@@ -50,14 +54,48 @@ export const Repositories = () => {
       </Wrap>
       <Stack spacing={8} paddingLeft="2.1rem" direction="row" marginY="1rem">
         {repos.length && page == 1 ? (
-          <Button onClick={handleNextPage}>Next</Button>
+          <IconButton
+            borderRadius="full"
+            aria-label="d"
+            variant="outline"
+            marginX="2rem"
+            colorScheme="gray"
+            onClick={handleNextPage}
+            icon={<GrNext />}
+          />
         ) : repos.length ? (
           <>
-            <Button onClick={handlePrevPage}>Prev</Button>
-            <Button onClick={handleNextPage}>Next</Button>
+            <Center>
+              <IconButton
+                borderRadius="full"
+                aria-label="d"
+                variant="outline"
+                colorScheme="gray"
+                onClick={handlePrevPage}
+                marginX="2rem"
+                icon={<GrPrevious />}
+              />
+              <IconButton
+                borderRadius="full"
+                aria-label="d"
+                variant="outline"
+                marginX="2rem"
+                colorScheme="gray"
+                onClick={handleNextPage}
+                icon={<GrNext />}
+              />
+            </Center>
           </>
         ) : (
-          <Button onClick={handlePrevPage}>Prev</Button>
+          <IconButton
+            borderRadius="full"
+            aria-label="d"
+            variant="outline"
+            colorScheme="gray"
+            onClick={handlePrevPage}
+            marginX="2rem"
+            icon={<GrPrevious />}
+          />
         )}
       </Stack>
     </Box>
@@ -80,6 +118,10 @@ const RepositoryCard: React.FC<CardRepositoryProps> = ({
   return (
     <Fade in={isOpen}>
       <WrapItem
+        transition="all ease .3s"
+        _hover={{
+          transform: 'translateY(-.5rem)'
+        }}
         shadow="md"
         key={id}
         backgroundColor={color?.colorMode == 'dark' ? 'gray.700' : 'white'}

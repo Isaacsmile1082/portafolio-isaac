@@ -28,7 +28,6 @@ const Home = () => {
         <PersonalInfo />
         <MoreAbout />
         <Box
-          border="1px solid"
           borderRadius="md"
           paddingY="2rem"
           borderColor="gray.600"
@@ -44,8 +43,8 @@ const Home = () => {
           <EducationPanel />
         </Box>
         <Box
-          border="1px solid"
-          borderRadius="md"
+          // border="1px solid"
+          borderRadius="xl"
           paddingY="2rem"
           borderColor="gray.600"
           marginY="3rem"

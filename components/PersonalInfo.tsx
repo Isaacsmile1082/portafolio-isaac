@@ -1,4 +1,12 @@
-import { Box, Divider, Flex, Heading, Stack, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Center,
+  Divider,
+  Flex,
+  Heading,
+  Stack,
+  Text
+} from '@chakra-ui/react'
 import React from 'react'
 import { SocialNetworks } from './SocialNetworks'
 import { TagsTechnologies } from './TagsTechnologies'
@@ -6,9 +14,8 @@ import { TagsTechnologies } from './TagsTechnologies'
 export const PersonalInfo = () => {
   return (
     <Flex
-      border="1px solid"
       borderRadius="10px"
-      shadow="sm"
+      shadow="lg"
       borderColor="gray.600"
       paddingX="1rem"
       display="flex"
@@ -30,8 +37,9 @@ export const PersonalInfo = () => {
           >
             Isaac Vazquez
           </Heading>
-
-          <Divider />
+          <Center>
+            <Divider w="50%" />
+          </Center>
           <br />
           <Text
             fontSize={['lg', 'lg', '2xl']}

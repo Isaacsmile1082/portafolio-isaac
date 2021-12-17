@@ -50,10 +50,11 @@ export const FormContact = () => {
 
   return (
     <Box
-      border="1px solid"
+      shadow="xl"
       borderRadius="lg"
       padding="1.5rem"
       borderColor="gray.600"
+      marginY="1rem"
       fontFamily="Montserrat"
     >
       <Heading as="h4" paddingY="1rem" fontFamily="montserrat">
