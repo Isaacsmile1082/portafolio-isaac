@@ -1,4 +1,4 @@
-import { Flex, IconButton, Wrap, WrapItem } from '@chakra-ui/react'
+import { Flex, IconButton, Link, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
 import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
@@ -15,28 +15,37 @@ export const SocialNetworks = () => {
       spacing="25px"
     >
       <WrapItem>
-        <IconButton
-          borderRadius="full"
-          aria-label="d"
-          colorScheme="facebook"
-          icon={<FaFacebookF />}
-        />
+        <Link target="_blank" href="https://www.facebook.com/angel.isaac.142/">
+          <IconButton
+            borderRadius="full"
+            aria-label="d"
+            colorScheme="facebook"
+            icon={<FaFacebookF />}
+          />
+        </Link>
       </WrapItem>
       <WrapItem>
-        <IconButton
-          borderRadius="full"
-          aria-label="d"
-          colorScheme="linkedin"
-          icon={<FaLinkedinIn />}
-        />
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/angel-isaac-vazquez-valadez-14875a198/"
+        >
+          <IconButton
+            borderRadius="full"
+            aria-label="d"
+            colorScheme="linkedin"
+            icon={<FaLinkedinIn />}
+          />
+        </Link>
       </WrapItem>
       <WrapItem>
-        <IconButton
-          borderRadius="full"
-          aria-label="d"
-          colorScheme="gray"
-          icon={<FaGithub />}
-        />
+        <Link href="https://github.com/Isaacsmile1082" target="_blank">
+          <IconButton
+            borderRadius="full"
+            aria-label="d"
+            colorScheme="gray"
+            icon={<FaGithub />}
+          />
+        </Link>
       </WrapItem>
     </Wrap>
   )
