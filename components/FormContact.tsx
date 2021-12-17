@@ -14,7 +14,7 @@ interface FormProps {
 }
 
 export const FormContact = () => {
-  const { setForm, handleSubmit } = useForm({
+  const { setForm, handleSubmit, resetForm } = useForm({
     email: '',
     name: '',
     message: ''
@@ -22,29 +22,30 @@ export const FormContact = () => {
 
   const [loading, setLoading] = React.useState(false)
 
-  const toast = useToast();
+  const toast = useToast()
 
   const onSubmit = async (data: FormProps) => {
     try {
       setLoading(true)
-      
+
       await postMail(data)
       toast({
         title: 'Message sended',
         status: 'success',
         duration: 9000,
-        isClosable: true,
+        isClosable: true
       })
     } catch (error) {
       toast({
         title: 'Error sending mail',
-        
+
         status: 'error',
         duration: 9000,
-        isClosable: true,
+        isClosable: true
       })
     }
     setLoading(false)
+    resetForm()
   }
 
   return (
@@ -55,7 +56,7 @@ export const FormContact = () => {
       borderColor="gray.600"
       fontFamily="Montserrat"
     >
-      <Heading as="h4" paddingY="1rem">
+      <Heading as="h4" paddingY="1rem" fontFamily="montserrat">
         Contact me
       </Heading>
       <form onSubmit={e => handleSubmit(e, onSubmit)}>

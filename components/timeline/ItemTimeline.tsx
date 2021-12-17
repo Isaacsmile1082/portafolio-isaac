@@ -1,4 +1,4 @@
-import { Box, Wrap, Flex, FlexProps, Divider, Stack } from '@chakra-ui/layout'
+import { Box, FlexProps, Divider, Stack } from '@chakra-ui/layout'
 import React from 'react'
 
 interface ItemTimeLineProps extends FlexProps {
@@ -23,7 +23,7 @@ export const ItemTimeline: React.FC<ItemTimeLineProps> = ({
               orientation="vertical"
               sx={{ borderLeftWidth: '2px' }}
               height="40px"
-              borderColor="white"
+              borderColor="gray.600"
             />
           )}
           <Box>
@@ -40,11 +40,13 @@ export const ItemTimeline: React.FC<ItemTimeLineProps> = ({
               orientation="vertical"
               sx={{ borderLeftWidth: '2px' }}
               height="40px"
-              borderColor="white"
+              borderColor="gray.600"
             />
           )}
         </Stack>
-        <Box>{children}</Box>
+        <Box display="flex" alignItems="center">
+          {children}
+        </Box>
       </Stack>
     </Stack>
   )

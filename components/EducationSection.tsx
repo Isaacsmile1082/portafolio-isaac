@@ -1,7 +1,7 @@
-import { Box, Divider, Flex, Text, Wrap } from '@chakra-ui/layout'
-import { Image } from '@chakra-ui/react'
+import { Box, Flex, Text, Wrap } from '@chakra-ui/layout'
+import { Image, useColorMode } from '@chakra-ui/react'
 import React from 'react'
-import { education, EducationProps } from '../../info/Education'
+import { education, EducationProps } from '../info/Education'
 import { Heading, Stack } from '@chakra-ui/react'
 
 export const EducationPanel = () => {
@@ -15,18 +15,21 @@ export const EducationPanel = () => {
 }
 
 const EducationCard = ({ name, title, period, image_url }: EducationProps) => {
+  const color = useColorMode()
+
   return (
     <Flex
       justify="center"
-      backgroundColor="gray.700"
+      backgroundColor={color?.colorMode === 'dark' ? 'gray.700' : 'white'}
       borderRadius="lg"
       maxW="40%"
+      shadow="md"
+      border="1px solid"
     >
       <Box
         display="flex"
         alignItems="center"
         width="40%"
-        backgroundColor="gray.500"
         borderRadius="lg"
         overflow="hidden"
       >

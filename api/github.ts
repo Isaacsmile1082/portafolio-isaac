@@ -12,11 +12,12 @@ export const authenticate = async () => {
   return login
 }
 
-export const getRepositories = async () => {
-  console.log(authenticate())
-  const { data } = await octokit.request('GET /users/{username}/repos', {
-    username: 'Isaacsmile1082'
+export const getRepositories = async (page = 1) => {
+  const resp = await octokit.request('GET /users/{username}/repos', {
+    username: 'Isaacsmile1082',
+    page,
+    per_page: 3
   })
-
-  return data
+  console.log(resp)
+  return resp.data
 }

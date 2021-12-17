@@ -5,7 +5,7 @@ export const useForm = (reset: any) => {
 
   const onChange = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      setData((state : any) => ({
+      setData((state: any) => ({
         ...state,
         [e.target.name]: e.target.value
       }))
@@ -15,11 +15,14 @@ export const useForm = (reset: any) => {
 
   const setForm = (name: any) => ({
     onChange,
-    name,
-    
+    name
   })
 
-  const handleSubmit = (e:any, callback: any) => {
+  const resetForm = React.useCallback(() => {
+    setData(reset)
+  }, [reset])
+
+  const handleSubmit = (e: any, callback: any) => {
     e.preventDefault()
     callback(data)
   }
@@ -27,6 +30,7 @@ export const useForm = (reset: any) => {
   return {
     data,
     setForm,
-    handleSubmit
+    handleSubmit,
+    resetForm
   }
 }
