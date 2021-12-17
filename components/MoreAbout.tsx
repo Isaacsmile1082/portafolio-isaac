@@ -17,16 +17,15 @@ export const MoreAbout = () => {
     <Tabs
       index={tabIndex}
       onChange={handleTabsChange}
-      isFitted
       sx={{ marginTop: '2rem' }}
       padding=".5rem"
+      marginY="5rem"
+      isFitted
     >
       <TabList>
         <Tab fontWeight="700">Stack</Tab>
         <Tab fontWeight="700">Repositories</Tab>
-        <Tab fontWeight="700">Blog</Tab>
         <Tab fontWeight="700">Experience</Tab>
-        <Tab fontWeight="700">Education</Tab>
       </TabList>
 
       <TabPanels>

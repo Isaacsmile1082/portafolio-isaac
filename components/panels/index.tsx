@@ -1,4 +1,4 @@
-import { EducationPanel } from './EducationPanel'
+import { EducationPanel } from '../EducationSection'
 import { ExperiencePanel } from './ExperiencePanel'
 import { Repositories } from './Repositories'
 import { StackTechs } from './StackTechs'
@@ -14,14 +14,10 @@ export const panels = [
   },
   {
     index: 2,
-    Panel: () => <h1>Currently im working on it :P</h1>
-  },
-  {
-    index: 3,
     Panel: ExperiencePanel
   },
   {
-    index: 4,
-    Panel: EducationPanel
+    index: 3,
+    Panel: () => <h1>Currently im working on it :P</h1>
   }
 ]

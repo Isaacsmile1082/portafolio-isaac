@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import { Cover } from '../components/Cover'
 import styles from '../styles/Home.module.css'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
 import { MoreAbout } from '../components/MoreAbout'
 import { PersonalInfo } from '../components/PersonalInfo'
 import { ToggleTheme } from '../components/ToggleTheme'
 import { FormContact } from '../components/FormContact'
 import { Footer } from '../components/Footer'
+import { EducationPanel } from '../components/EducationSection'
+import React from 'react'
 
 const Home = () => {
   return (
@@ -24,6 +26,37 @@ const Home = () => {
         <ToggleTheme />
         <PersonalInfo />
         <MoreAbout />
+        <Box
+          border="1px solid"
+          borderRadius="md"
+          paddingY="2rem"
+          borderColor="gray.600"
+          marginY="3rem"
+        >
+          <Heading
+            textAlign="center"
+            marginBottom="3rem"
+            fontFamily="montserrat"
+          >
+            Education
+          </Heading>
+          <EducationPanel />
+        </Box>
+        <Box
+          border="1px solid"
+          borderRadius="md"
+          paddingY="2rem"
+          borderColor="gray.600"
+          marginY="3rem"
+        >
+          <Heading
+            textAlign="center"
+            marginBottom="3rem"
+            fontFamily="montserrat"
+          >
+            Blog
+          </Heading>
+        </Box>
         <FormContact />
       </Container>
       <Box marginTop="2rem">
