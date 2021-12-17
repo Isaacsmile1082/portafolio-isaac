@@ -36,7 +36,7 @@ export const BlogSection = () => {
       try {
         setLoading(true)
         const data = await getPosts(pages)
-        setBlogs(data)
+        setBlogs(data as any)
         console.log(data)
       } catch (error) {
         console.log(error)
