@@ -6,7 +6,7 @@ import { Heading, Stack } from '@chakra-ui/react'
 
 export const EducationPanel = () => {
   return (
-    <Wrap spacing={4} justify="space-around">
+    <Wrap spacing={4} justify="space-around" paddingX={['1rem', null, null]}>
       {education.map(props => (
         <EducationCard {...props} key={props.name} />
       ))}
@@ -22,7 +22,7 @@ const EducationCard = ({ name, title, period, image_url }: EducationProps) => {
       justify="center"
       backgroundColor={color?.colorMode === 'dark' ? 'gray.700' : 'white'}
       borderRadius="lg"
-      maxW="40%"
+      maxW={['100%', null, null, '40%']}
       shadow="md"
       border="1px solid"
     >
