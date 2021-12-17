@@ -9,6 +9,7 @@ import { FormContact } from '../components/FormContact'
 import { Footer } from '../components/Footer'
 import { EducationPanel } from '../components/EducationSection'
 import React from 'react'
+import { BlogSection } from '../components/BlogSection'
 
 const Home = () => {
   return (
@@ -56,6 +57,7 @@ const Home = () => {
           >
             Blog
           </Heading>
+          <BlogSection />
         </Box>
         <FormContact />
       </Container>

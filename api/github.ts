@@ -18,6 +18,6 @@ export const getRepositories = async (page = 1) => {
     page,
     per_page: 3
   })
-  console.log(resp)
+
   return resp.data
 }
