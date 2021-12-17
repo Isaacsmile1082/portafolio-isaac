@@ -29,7 +29,7 @@ export const Repositories = () => {
   const { repos, handleNextPage, handlePrevPage, page } = useRepo(1)
   return (
     <Box>
-      <Wrap spacing={5} justify="space-around">
+      <Wrap spacing={5} justify={['center', 'start', 'space-around']}>
         {repos?.map((repo: any) => (
           <RepositoryCard
             key={repo.id}
@@ -48,7 +48,7 @@ export const Repositories = () => {
           </Alert>
         )}
       </Wrap>
-      <Stack spacing={8} paddingLeft=".5rem" direction="row" marginY="1rem">
+      <Stack spacing={8} paddingLeft="2.1rem" direction="row" marginY="1rem">
         {repos.length && page == 1 ? (
           <Button onClick={handleNextPage}>Next</Button>
         ) : repos.length ? (
