@@ -24,12 +24,10 @@ export const MoreAbout = () => {
     >
       <TabList>
         <Tab fontWeight="700">Stack</Tab>
-        <Tab fontWeight="700">Repositories</Tab>
-        <Tab fontWeight="700">Experience</Tab>
       </TabList>
 
       <TabPanels>
-        {panels.map(({ index, Panel }) => (
+        {panels.map(({ Panel }, index) => (
           <TabPanel key={index}>
             <Fade in={tabIndex == index}>{<Panel />}</Fade>
           </TabPanel>

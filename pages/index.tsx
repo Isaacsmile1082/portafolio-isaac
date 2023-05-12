@@ -9,7 +9,10 @@ import { FormContact } from '../components/FormContact'
 import { Footer } from '../components/Footer'
 import { EducationPanel } from '../components/EducationSection'
 import React from 'react'
-import { BlogSection } from '../components/BlogSection'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+// import { BlogSection } from '../components/BlogSection'
+import 'react-vertical-timeline-component/style.min.css'
+import { ExperiencePanel } from '../components/ExperiencePanel'
 
 const Home = () => {
   return (
@@ -27,6 +30,7 @@ const Home = () => {
         <ToggleTheme />
         <PersonalInfo />
         <MoreAbout />
+        <ExperiencePanel />
         <Box
           borderRadius="md"
           paddingY="2rem"
@@ -56,7 +60,7 @@ const Home = () => {
           >
             Blog
           </Heading>
-          <BlogSection />
+          {/* <BlogSection /> */}
         </Box>
         <FormContact />
       </Container>
