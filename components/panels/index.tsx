@@ -5,5 +5,5 @@ import { StackTechs } from './StackTechs'
 export const panels = [
   {
     Panel: StackTechs
-  },
+  }
 ]

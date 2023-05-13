@@ -9,8 +9,7 @@ import { FormContact } from '../components/FormContact'
 import { Footer } from '../components/Footer'
 import { EducationPanel } from '../components/EducationSection'
 import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-// import { BlogSection } from '../components/BlogSection'
+
 import 'react-vertical-timeline-component/style.min.css'
 import { ExperiencePanel } from '../components/ExperiencePanel'
 
